@@ -103,5 +103,5 @@ foreach ($popes as $pope) {
     }
 }
 
-$calendar = Calendar::create('Festività vaticane')->refreshInterval(1440)->timezone(new Timezone('Europe/Vatican'))->event($events);
+$calendar = Calendar::create('Festività in Vaticano')->refreshInterval(60)->event($events);
 echo $calendar->get();
