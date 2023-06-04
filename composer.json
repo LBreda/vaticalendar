@@ -1,0 +1,19 @@
+{
+    "name": "lbreda/vaticalendar",
+    "description": "Vatican festivities ICS generator",
+    "type": "project",
+    "license": "GPL-3",
+    "authors": [
+        {
+            "name": "Lorenzo Breda",
+            "email": "lorenzo@lbreda.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "ext-calendar": "*",
+        "spatie/icalendar-generator": "^2.5",
+        "nesbot/carbon": "^2.67",
+        "vlucas/phpdotenv": "^5.5"
+    }
+}
