@@ -37,6 +37,7 @@ $fixedDateEvents = [
     '16 august'   => 'Chiusura estiva',
     '1 november'  => 'Tutti i santi',
     '2 november'  => 'Commemorazione dei defunti',
+    '8 december'  => 'Immacolata Concezione',
     '25 december' => 'Natale',
     '26 december' => 'Santo Stefano',
     '27 december' => 'San Giovanni Apostolo',
