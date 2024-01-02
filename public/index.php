@@ -98,9 +98,6 @@ foreach ($fixedDateEvents as $date => $data) {
 # Epiphany-bound and Easter-bound events                                                                               #
 ########################################################################################################################
 for ($year = $firstDate->year; $year < $lastDate->year; $year++) {
-    // Epiphany-bound
-    $events[] = Event::create('Battesimo del Signore')->uniqueIdentifier(UID_BASE . "baptism_{$year}")->startsAt(Carbon::parse("6 january {$year}")->next('Monday'))->fullDay();
-
     // Easter-bound
     $easterDate = Carbon::parse(easter_date($year))->setTimezone(new DateTimeZone('Europe/Vatican'));
     $events[] = Event::create('Domenica delle Palme')->uniqueIdentifier(UID_BASE . "palmSun_{$year}")->startsAt($easterDate->copy()->previous('Sunday'))->fullDay();
