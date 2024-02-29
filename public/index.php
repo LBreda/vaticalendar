@@ -41,6 +41,10 @@ $fixedDateEvents = [
         'shortname' => 'lourdes',
         'name' => 'Beata Vergine Maria di Lourdes',
     ],
+    '19 march' => [
+        'shortname' => 'stJoseph',
+        'name' => 'San Giuseppe',
+    ],
     '1 may'       => [
         'shortname' => 'stJosephWorker',
         'name' => 'San Giuseppe Lavoratore',
