@@ -77,6 +77,10 @@ $fixedDateEvents = [
         'shortname' => 'immaculateConception',
         'name' => 'Immacolata Concezione',
     ],
+    '24 december' => [
+        'shortname' => 'christmas_vigil',
+        'name' => 'Vigilia di Natale',
+    ],
     '25 december' => [
         'shortname' => 'christmas',
         'name' => 'Natale',
