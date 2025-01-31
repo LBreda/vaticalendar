@@ -39,7 +39,7 @@ $fixedDateEvents = [
     ],
     '11 february' => [
         'shortname' => 'lourdes',
-        'name' => 'Beata Vergine Maria di Lourdes',
+        'name' => 'Fobdazione dello Stato della Città del Vaticano',
     ],
     '19 march' => [
         'shortname' => 'stJoseph',
