@@ -142,8 +142,14 @@ $popes = [
     (object)[
         'name'         => "Francesco",
         'election'     => Carbon::parse('20130313'),
-        'endOfMandate' => null,
+        'endOfMandate' => Carbon::parse('20250421'),
         'nameDay'      => Carbon::parse('20130423'),
+    ],
+    (object)[
+        'name'         => "Leone XIV",
+        'election'     => Carbon::parse('20250509'),
+        'endOfMandate' => null,
+        'nameDay'      => Carbon::parse('20250917'),
     ],
 ];
 
