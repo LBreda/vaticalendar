@@ -155,7 +155,7 @@ $popes = [
 
 // Saves the events for Popes in the interesting interval
 foreach ($popes as $pope) {
-    if ($pope->election->lt($firstDate) and ($pope->endOfMandate == null or $pope->endOfMandate->gt($lastDate))) {
+    if ($pope->election->lt(Carbon::now()) and ($pope->endOfMandate == null or $pope->endOfMandate->gt($lastDate))) {
         $popeDatesFrequency = $pope->endOfMandate ? RRule::frequency(RecurrenceFrequency::yearly())->until($pope->endOfMandate) : RRule::frequency(RecurrenceFrequency::yearly());
         $events[] = Event::create("Elezione di Sua Santità {$pope->name}")->uniqueIdentifier(UID_BASE . "pope_" . $pope->election->format('Ymd'))->startsAt($pope->election->copy()->addYear())->fullDay()->rrule($popeDatesFrequency);
         $events[] = Event::create("Onomastico di Sua Santità {$pope->name}")->uniqueIdentifier(UID_BASE . "pope_" . $pope->nameDay->format('Ymd'))->startsAt($pope->nameDay)->fullDay()->rrule($popeDatesFrequency);
